@@ -35,15 +35,15 @@ fn do_not_substitute_literals() {
 
 #[test]
 fn substitute_members() {
-    struct Foo {
+    struct Struct {
         x: i32,
     }
 
-    let foo = Foo{x: 15};
+    let s = Struct { x: 15 };
 
     let mut val = 0;
     ct_for!(a in [x] do
-        val += foo.a;
+        val += s.a;
     );
     assert_eq!(val, 15);
 }

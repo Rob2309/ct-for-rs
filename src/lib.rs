@@ -2,11 +2,11 @@ use proc_macro2::Group;
 use quote::{quote, quote_spanned};
 
 /// Expands a code snippet `n` times and substitutes an identifier with given values
-/// 
+///
 /// # Example
 /// ```
 /// use ct_for::ct_for;
-/// 
+///
 /// let c = 8;
 /// ct_for!(x in ["5", 6, c] do
 ///     println!("{}", x);
@@ -16,7 +16,7 @@ use quote::{quote, quote_spanned};
 /// println!("{}", 6);
 /// println!("{}", c);
 /// ```
-/// 
+///
 #[proc_macro]
 pub fn ct_for(args: proc_macro::TokenStream) -> proc_macro::TokenStream {
     let args = proc_macro2::TokenStream::from(args);
