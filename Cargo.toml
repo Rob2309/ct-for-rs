@@ -1,0 +1,20 @@
+[package]
+name = "ct-for"
+version = "0.1.0"
+authors = [ "Robin Quint" ]
+edition = "2021"
+description = "macro to repeat code multiple times with different substitutions"
+repository = "https://github.com/rob2309/ct-for-rs"
+license = "MIT"
+keywords = [ "for", "repeat", "substitute", "subst" ]
+categories = [ "development-tools" ]
+exclude = [ ".github" ]
+
+[lib]
+proc-macro = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+proc-macro2 = "1.0.36"
+quote = "1.0.15"
