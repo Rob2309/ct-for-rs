@@ -10,7 +10,7 @@ This crate exposes the `ct-for!()` macro, which can be used to repeat code `n` t
 For example:
 ```rust
 let c = 17;
-ct_for!(x in ["5", 6, c, vec![5, 6, 7]]
+ct_for!(x in ["5", 6, c, vec![5, 6, 7]] do
     println!("{:?}", x);
 );
 ```
