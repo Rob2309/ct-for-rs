@@ -2,7 +2,7 @@
 
 ![license](https://img.shields.io/crates/l/ct-for?style=for-the-badge)
 [![crates.io](https://img.shields.io/crates/v/ct-for?style=for-the-badge)](https://crates.io/crates/ct-for)
-[![ci](https://img.shields.io/github/workflow/status/rob2309/ct-for-rs/Continuous%20Integration?label=CI&style=for-the-badge)](https://github.com/Rob2309/ct-for-rs/actions/workflows/ci.yaml)
+[![ci](https://img.shields.io/github/actions/workflow/status/rob2309/ct-for-rs/ci.yaml?label=CI&style=for-the-badge)](https://github.com/Rob2309/ct-for-rs/actions/workflows/ci.yaml)
 [![docs.rs](https://img.shields.io/docsrs/ct-for?style=for-the-badge)](https://docs.rs/ct-for)
 
 This crate exposes the `ct-for!()` macro, which can be used to repeat code `n` times with a substitution.
